@@ -7,9 +7,9 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 9999
 
-steps:
- name: hashcat
- run: Invoke-WebRequest https://github.com/s77rt/hashcat.launcher/releases/download/v1.1.5/hashcat.launcher_1.1.5_windows.7z
+    steps:
+     name: hashcat
+     run: Invoke-WebRequest https://github.com/s77rt/hashcat.launcher/releases/download/v1.1.5/hashcat.launcher_1.1.5_windows.7z
 
  name: after download
  run: expand-archive hashcat.launcher_1.1.5_windows.7z
